@@ -90,11 +90,6 @@
 					<artifactId>l10n-maven-plugin</artifactId>
 					<version>1.0-SNAPSHOT</version>
 				</plugin>
-				<plugin>
-					<groupId>be.docarch</groupId>
-					<artifactId>oxt-maven-plugin</artifactId>
-					<version>1.0-SNAPSHOT</version>
-				</plugin>
 			</plugins>
 		</pluginManagement>
 	</build>
@@ -119,23 +114,6 @@
 								</goals>
 							</execution>
 						</executions>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-		<profile>
-			<id>addon</id>
-			<activation>
-				<file>
-					<exists>src/main/oxt</exists>
-				</file>
-			</activation>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>be.docarch</groupId>
-						<artifactId>oxt-maven-plugin</artifactId>
-						<extensions>true</extensions>
 					</plugin>
 				</plugins>
 			</build>
